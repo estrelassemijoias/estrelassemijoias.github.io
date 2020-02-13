@@ -1,0 +1,57 @@
+.depoimentos {
+  height: 450px;
+  width: 100%;
+  background-color: #F2E7E3;
+  position: relative;
+}
+
+.img-depoimentos {
+  height: 100%;
+  width: 100%;
+  background-image: url("../../img/bg-depoimentos.jpg");
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+#slide-depoimentos {
+  height: 100%;
+  width: 600px; 
+  background-color: #fff; 
+}
+
+#slide-depoimentos:before {
+  content: '';
+  display: block;
+  position: relative;
+  right: 100%;
+  border-right: 300px solid #F2E7E3;
+  border-top: 450px solid transparent;
+}
+
+.carousel{
+  margin-top: 50px;
+}
+.carousel-inner{
+  height: 300px;
+}
+.carousel-caption{
+  color: #fff;
+  top: 50%;
+}
+
+.img-depoimento {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-color: #fff;
+
+  #depoimento-01 {
+    background-image: url("../../img/depoimento01.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}

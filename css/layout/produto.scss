@@ -1,0 +1,32 @@
+.produto-card  {
+  width: 100%;
+  height: 500px;
+  background-image: url('../../img/produto.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.produto-info {
+  position: absolute;
+  height: 470px;
+  width: 800px;
+  background: #FFF;
+  right: 0;
+  top: 30px;
+  @extend %border;
+  padding: 50px;
+}
+
+@media (max-width: 720px){
+  .produto-card {
+    margin: 0px;
+    height: auto;
+  }
+  .produto-info {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+}

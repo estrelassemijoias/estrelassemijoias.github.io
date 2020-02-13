@@ -1,0 +1,47 @@
+.bg-promo {
+  background-image: url("../../img/bg-promo.jpg");
+  height: 400px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+
+  .container {
+    position: absolute;
+    padding-left: 30px;
+  }
+}
+
+
+.img-promo {
+  background-image: url("../../img/img-promo.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 700px;
+  position: absolute;
+  right: 100px;
+  top: 50px;
+  @extend %border;
+  transition: 1s;
+
+  &:hover {
+    background-position: right 35% bottom 45%;
+  }
+}
+
+@media (max-width: 720px){
+  .img-promo {
+    display: none;
+  }
+
+  .bg-promo {
+    height: auto;
+    .container {
+      position: relative;
+    }
+  }
+}

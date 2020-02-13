@@ -1,0 +1,12 @@
+
+
+#mais_pedidos .card {
+  top:0;
+  transition: 1s;
+
+  &:hover {
+    top: -10px;
+    transform: scale(1.01);
+    @extend %border;
+  }
+}
